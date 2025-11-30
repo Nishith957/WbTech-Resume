@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // active nav link
+   
     document.querySelectorAll('.nav a').forEach(function (a) {
         try {
             const href = a.getAttribute('href');
@@ -9,9 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
         } catch (e) { }
     });
 
-    // footer year
+   
     const y = new Date().getFullYear();
     document.getElementById('year')?.textContent = y;
     document.getElementById('year2')?.textContent = y;
     document.getElementById('year3')?.textContent = y;
 });
+
